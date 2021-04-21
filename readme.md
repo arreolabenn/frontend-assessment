@@ -1,40 +1,19 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, Vue.js preferred. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+# Instructions to open the project from the source
 
-Exercise 1
----
-Build a responsive page based on the designs.
+# 1. Go to nuxt-source folder
+$ cd mindarc-assesment
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+# 2. Install dependencies
+$ npm install
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+# 3. Serve at localhost:3000
+$ npm run dev
 
-##### Assets
-* Desktop banner - http://via.placeholder.com/1920x650
-* Mobile banner - http://via.placeholder.com/600x600
-* Content images - http://via.placeholder.com/400x300
-
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
-
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+# 4. Open project at http://localhost:3000/
 
 ###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
 * Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+- Javascript is trying to compute for "+ + 'a'" by converting it into a number
+- The result is NaN (Not a Number)
+- Combining everything 'b', 'a', NaN, and 'a' = "baNaNa"
+- Then toLowerCase() results to "banana" 

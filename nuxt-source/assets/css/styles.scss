@@ -1,0 +1,72 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// ===== EDIT FROM HERE =====
+
+/*generic variables*/
+$body-size: 15px;
+$body-line-height: 1.5;
+
+// Set your colors
+$deluge: #7C71AD;
+$fiord: #445569;
+$titan_white: #F1F0FF;
+$salmon: #E96D63;
+$goldish: #B39F73;
+$newBlue: #1B242F;
+$steelBlue: #4682B4;
+$gold: #FFD700;
+$orange: #F4BA70;
+$newgreen: #274E12;
+$green: #37761D;
+$newgold: #BF9001;
+$newred: #990001;
+
+$primary: $newBlue;
+$primary-invert: findColorInvert($primary);
+$secondary: $orange;
+$secondary-invert: findColorInvert($secondary);
+$accent: $goldish;
+$accent-invert: findColorInvert($accent);
+$info: $steelBlue;
+$info-invert: findColorInvert($info);
+// $warning: $gold;
+$warning: $newgold;
+$warning-invert: findColorInvert($warning);
+$success: $newgreen;
+
+// $blue: $fiord;
+// $blue-invert: findColorInvert($blue);
+$grey: $fiord;
+$grey-invert: findColorInvert($grey);
+
+$danger: $newred;
+
+$colors: (
+    "primary": ($primary, $primary-invert),
+    "secondary": ($secondary, $secondary-invert),
+    "accent": ($accent, $accent-invert),
+    "green": ($green, $green-invert),
+    "grey": ($grey, $grey-invert),
+    "blue": ($blue, $blue-invert),
+
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// ===== EDIT TO HERE =====
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
