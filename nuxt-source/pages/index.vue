@@ -16,7 +16,7 @@ export default {
   },
 
   beforeMount() {
-    this.$nuxt.$router.replace({ path: `/assessments/1` })
+    this.$nuxt.$router.replace({ path: `/assessments/one` })
   },
 
   methods: {},
